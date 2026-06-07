@@ -101,6 +101,15 @@ main.container {
 }
 .section:last-of-type { border-bottom: 0; }
 .anchor { scroll-margin-top: 86px; }
+.hero-kicker {
+  margin: 0 0 14px;
+  color: var(--accent);
+  font-family: "IBM Plex Sans", "Avenir Next", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
 h1,
 h2,
 h3 {
@@ -135,10 +144,17 @@ h3 {
   font-weight: 600;
 }
 .subtitle {
-  margin: 14px 0 12px;
+  margin: 16px 0 6px;
+  color: var(--text);
+  font-family: "IBM Plex Sans", "Avenir Next", sans-serif;
+  font-size: 1.12rem;
+  font-weight: 600;
+}
+.subtitle-meta {
+  margin: 0 0 16px;
   color: var(--muted);
   font-family: "IBM Plex Sans", "Avenir Next", sans-serif;
-  font-size: 1.04rem;
+  font-size: 0.96rem;
 }
 .alert {
   display: inline-block;
@@ -162,11 +178,44 @@ h3 {
 .hero-text {
   max-width: 720px;
 }
-.research-list {
-  padding-left: 1.2rem;
+.overview-panel {
+  margin-top: 28px;
+  padding: 26px 28px 30px;
+  border: 1px solid rgba(223, 211, 192, 0.95);
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255, 253, 249, 0.96), rgba(247, 241, 232, 0.86));
+  box-shadow: 0 18px 40px rgba(72, 48, 20, 0.06);
 }
-.research-list li + li {
-  margin-top: 0.35rem;
+.overview-panel h2 {
+  margin-bottom: 16px;
+}
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+}
+.focus-item {
+  min-height: 100%;
+  padding: 18px 18px 16px;
+  border: 1px solid rgba(223, 211, 192, 0.9);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.56);
+}
+.focus-item h3 {
+  font-size: 1.02rem;
+}
+.focus-item p:last-child {
+  margin-bottom: 0;
+}
+.focus-index {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-family: "IBM Plex Sans", "Avenir Next", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 .quick-links {
   display: flex;
@@ -239,32 +288,36 @@ h3 {
 .publication {
   display: grid;
   grid-template-columns: 176px minmax(0, 1fr);
-  gap: 24px;
-  padding: 22px 0;
+  gap: 26px;
+  padding: 24px 0;
   align-items: start;
   border-bottom: 1px solid rgba(223, 211, 192, 0.72);
 }
 .publication:last-child { border-bottom: 0; }
-.pub-thumb {
-  min-height: 124px;
-  display: grid;
-  place-items: center;
-  padding: 18px;
-  border: 1px solid rgba(214, 199, 177, 0.85);
+.pub-media {
+  display: block;
   border-radius: 20px;
-  color: #845432;
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(244, 237, 225, 0.95)),
-    linear-gradient(120deg, rgba(29, 95, 191, 0.1), rgba(201, 111, 52, 0.08));
+  overflow: hidden;
+  border: 1px solid rgba(214, 199, 177, 0.85);
   box-shadow: 0 14px 34px rgba(72, 48, 20, 0.06);
-  text-align: center;
-  font-family: "IBM Plex Sans", "Avenir Next", sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.2;
+}
+.pub-image {
+  width: 100%;
+  aspect-ratio: 1.18;
+  display: block;
+  object-fit: cover;
 }
 .pub-body {
   padding-top: 2px;
+}
+.pub-badge {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-family: "IBM Plex Sans", "Avenir Next", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 .authors,
 .venue,
@@ -362,6 +415,9 @@ h3 {
   .publication {
     grid-template-columns: 150px minmax(0, 1fr);
   }
+    .focus-grid {
+      grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 760px) {
@@ -408,8 +464,8 @@ h3 {
   .publication {
     gap: 14px;
   }
-  .pub-thumb {
-    min-height: 96px;
+  .overview-panel {
+    padding: 22px 20px 24px;
   }
   .date {
     margin-bottom: 2px;

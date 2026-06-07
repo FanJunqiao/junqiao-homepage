@@ -28,8 +28,10 @@
   <main class="container">
     <section id="about" class="hero section anchor">
       <div class="hero-text">
+        <p class="hero-kicker">Academic Homepage</p>
         <h1>Junqiao Fan</h1>
-        <p class="subtitle">Ph.D. Student @ <a href="https://www.ntu.edu.sg/eee" target="_blank" rel="noreferrer">EEE, NTU</a></p>
+        <p class="subtitle">Ph.D. Student in Electrical and Electronic Engineering</p>
+        <p class="subtitle-meta"><a href="https://www.ntu.edu.sg/eee" target="_blank" rel="noreferrer">Nanyang Technological University</a> · Singapore</p>
         <p class="alert">Looking for PostDoc opportunities. Email: <a href="mailto:fanj0019@e.ntu.edu.sg">fanj0019@e.ntu.edu.sg</a></p>
 
         <p>
@@ -37,18 +39,22 @@
           Nanyang Technological University, Singapore. I am supervised by Prof. Lihua Xie
           and co-supervised by Prof. Jianfei Yang.
         </p>
-        <p>
-          My research focuses on <strong>human sensing</strong>, <strong>embodied AI</strong>, and
-          <strong>generative AI</strong>. I am particularly interested in privacy-preserving human
-          motion capture with RF sensors, mmWave radar perception, human pose and mesh
-          estimation, and human-centered physical AI systems for healthcare and daily assistance.
-        </p>
 
-        <ul class="research-list">
-          <li><strong>Human Sensing:</strong> human motion capture, motion generation, pose and mesh estimation.</li>
-          <li><strong>Embodied AI:</strong> multimodal perception, robot learning, human-robot interaction.</li>
-          <li><strong>Generative AI:</strong> diffusion and flow models for human motion and data generation.</li>
-        </ul>
+        <div class="overview-panel">
+          <h2>Overview</h2>
+          <p>
+            My research focuses on human-centered AI, enabling AI agents, robots, IoT systems,
+            and healthcare devices to perceive, understand, and interact with humans. My
+            long-term vision is to build warm and trustworthy AI assistants with strong human
+            awareness, supporting daily living and healthcare.
+          </p>
+          <p>
+            My current work advances this goal along three axes: privacy-preserving motion
+            capture using low-cost RF sensors such as mmWave radar; human motion modeling
+            with advanced generative AI; and healthcare AI for monitoring physical and mental
+            well-being with IoT devices.
+          </p>
+        </div>
 
         <div class="quick-links" aria-label="External links">
           <a href="https://scholar.google.com/citations?user=5cEG4tIAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
@@ -72,10 +78,10 @@
     <section id="news" class="section anchor">
       <h2>news</h2>
       <div class="news-list">
-        <p><span class="date">2026</span> <strong>M4Human</strong> is accepted to CVPR 2026.</p>
-        <p><span class="date">2026</span> <strong>mmPred</strong> appears in AAAI 2026.</p>
-        <p><span class="date">2024</span> <strong>Diffusion Model Is a Good Pose Estimator from 3D RF-Vision</strong> appears in ECCV 2024.</p>
-        <p><span class="date">2024</span> Received 2nd place in the First Dataset Distillation Challenge of ECCV 2024.</p>
+        <p><span class="date">2026</span><span class="news-text"><strong>M4Human</strong> is accepted to CVPR 2026: the current largest-scale mmWave radar benchmark dataset.</span></p>
+        <p><span class="date">2026</span><span class="news-text"><strong>mmPred</strong> is accepted tp AAAI 2026: the first RF-based motion prediction framework .</span></p>
+        <p><span class="date">2024</span><span class="news-text"><strong>mmDiff</strong> is accepted tp ECCV 2024: the first diffusion-basaed HPE framework for RF vision.</span></p>
+        <p><span class="date">2024</span><span class="news-text"><strong>2nd place award</strong> in the First Dataset Distillation Challenge of ECCV 2024.</span></p>
       </div>
     </section>
 
@@ -83,52 +89,67 @@
       <h2>selected publications</h2>
 
       <article class="publication">
-        <div class="pub-thumb">CVPR<br />2026</div>
+        <a class="pub-media" href="assets/publication-overviews/m4human-overview.svg" target="_blank" rel="noreferrer">
+          <img src="assets/publication-overviews/m4human-overview.svg" alt="Overview preview for M4Human" class="pub-image" />
+        </a>
         <div class="pub-body">
+          <p class="pub-badge">CVPR 2026</p>
           <h3>M4Human: A Large-Scale Multimodal mmWave Radar Benchmark for Human Mesh Reconstruction</h3>
           <p class="authors"><strong>Junqiao Fan</strong>, Yunjiao Zhou, Yizhuo Yang, Xinyuan Cui, Jiarui Zhang, Lihua Xie, Jianfei Yang, Chris Xiaoxuan Lu, Fangqiang Ding</p>
           <p class="venue">In IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2026.</p>
-          <p class="links"><a href="#" aria-disabled="true">Bib</a> <a href="#" aria-disabled="true">Project</a> <a href="#" aria-disabled="true">PDF</a></p>
+          <p class="links"><a href="assets/publication-overviews/m4human-overview.svg" target="_blank" rel="noreferrer">Overview</a> <a href="#" aria-disabled="true">Project</a> <a href="#" aria-disabled="true">PDF</a> <a href="#" aria-disabled="true">File</a></p>
         </div>
       </article>
 
       <article class="publication">
-        <div class="pub-thumb">AAAI<br />2026</div>
+        <a class="pub-media" href="assets/publication-overviews/mmpred-overview.svg" target="_blank" rel="noreferrer">
+          <img src="assets/publication-overviews/mmpred-overview.svg" alt="Overview preview for mmPred" class="pub-image" />
+        </a>
         <div class="pub-body">
+          <p class="pub-badge">AAAI 2026</p>
           <h3>mmPred: Radar-Based Human Motion Prediction in the Dark</h3>
           <p class="authors"><strong>Junqiao Fan</strong>, Haocong Rao, Jiarui Zhang, Jianfei Yang, Lihua Xie</p>
           <p class="venue">Proceedings of the AAAI Conference on Artificial Intelligence, 2026, pp. 3777-3785.</p>
-          <p class="links"><a href="#" aria-disabled="true">Bib</a> <a href="#" aria-disabled="true">Code</a> <a href="#" aria-disabled="true">PDF</a></p>
+          <p class="links"><a href="assets/publication-overviews/mmpred-overview.svg" target="_blank" rel="noreferrer">Overview</a> <a href="#" aria-disabled="true">Code</a> <a href="#" aria-disabled="true">PDF</a> <a href="#" aria-disabled="true">File</a></p>
         </div>
       </article>
 
       <article class="publication">
-        <div class="pub-thumb">ECCV<br />2024</div>
+        <a class="pub-media" href="assets/publication-overviews/rf-vision-overview.svg" target="_blank" rel="noreferrer">
+          <img src="assets/publication-overviews/rf-vision-overview.svg" alt="Overview preview for Diffusion Model Is a Good Pose Estimator from 3D RF-Vision" class="pub-image" />
+        </a>
         <div class="pub-body">
+          <p class="pub-badge">ECCV 2024</p>
           <h3>Diffusion Model Is a Good Pose Estimator from 3D RF-Vision</h3>
           <p class="authors"><strong>Junqiao Fan</strong>, Jianfei Yang, Yuecong Xu, Lihua Xie</p>
           <p class="venue">In European Conference on Computer Vision, 2024, pp. 1-18.</p>
-          <p class="links"><a href="#" aria-disabled="true">Bib</a> <a href="#" aria-disabled="true">Code</a> <a href="#" aria-disabled="true">PDF</a></p>
+          <p class="links"><a href="assets/publication-overviews/rf-vision-overview.svg" target="_blank" rel="noreferrer">Overview</a> <a href="#" aria-disabled="true">Code</a> <a href="#" aria-disabled="true">PDF</a> <a href="#" aria-disabled="true">File</a></p>
         </div>
       </article>
 
       <article class="publication">
-        <div class="pub-thumb">ECCV<br />W 2024</div>
+        <a class="pub-media" href="assets/publication-overviews/dataset-distillation-overview.svg" target="_blank" rel="noreferrer">
+          <img src="assets/publication-overviews/dataset-distillation-overview.svg" alt="Overview preview for Generative Dataset Distillation Using Min-Max Diffusion Model" class="pub-image" />
+        </a>
         <div class="pub-body">
+          <p class="pub-badge">ECCV Workshop 2024</p>
           <h3>Generative Dataset Distillation Using Min-Max Diffusion Model</h3>
           <p class="authors"><strong>Junqiao Fan</strong>, Yunjiao Zhou, Min Chang Jordan Ren, Jianfei Yang</p>
           <p class="venue">European Conference on Computer Vision Workshops, 2024, pp. 60-67.</p>
-          <p class="links"><a href="#" aria-disabled="true">Bib</a> <a href="#" aria-disabled="true">Code</a> <a href="#" aria-disabled="true">PDF</a></p>
+          <p class="links"><a href="assets/publication-overviews/dataset-distillation-overview.svg" target="_blank" rel="noreferrer">Overview</a> <a href="#" aria-disabled="true">Code</a> <a href="#" aria-disabled="true">PDF</a> <a href="#" aria-disabled="true">File</a></p>
         </div>
       </article>
 
       <article class="publication">
-        <div class="pub-thumb">IEEE WC<br />2022</div>
+        <a class="pub-media" href="assets/publication-overviews/iomt-overview.svg" target="_blank" rel="noreferrer">
+          <img src="assets/publication-overviews/iomt-overview.svg" alt="Overview preview for Federated Learning Driven Secure Internet of Medical Things" class="pub-image" />
+        </a>
         <div class="pub-body">
+          <p class="pub-badge">IEEE Wireless Communications 2022</p>
           <h3>Federated Learning Driven Secure Internet of Medical Things</h3>
           <p class="authors"><strong>Junqiao Fan</strong>, Xuehe Wang, Yanxiang Guo, Xiping Hu, Bin Hu</p>
           <p class="venue">IEEE Wireless Communications, vol. 29, no. 2, pp. 68-75, 2022.</p>
-          <p class="links"><a href="#" aria-disabled="true">Bib</a> <a href="#" aria-disabled="true">PDF</a></p>
+          <p class="links"><a href="assets/publication-overviews/iomt-overview.svg" target="_blank" rel="noreferrer">Overview</a> <a href="#" aria-disabled="true">PDF</a> <a href="#" aria-disabled="true">File</a></p>
         </div>
       </article>
     </section>
