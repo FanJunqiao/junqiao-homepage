@@ -1,0 +1,130 @@
+\documentclass[10pt,a4paper]{article}
+
+% Compile with pdfLaTeX. Blue matches the homepage's light-mode accent.
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=16mm]{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{microtype}
+\definecolor{cvblue}{HTML}{294F7D}
+\definecolor{cvgray}{HTML}{555555}
+\hypersetup{colorlinks=true,urlcolor=cvblue,linkcolor=cvblue,
+  pdftitle={Junqiao Fan -- Curriculum Vitae},pdfauthor={Junqiao Fan}}
+\urlstyle{same}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{2em}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\raggedright
+\titleformat{\section}{\large\bfseries\color{cvblue}}{}{0pt}{}[\vspace{-7pt}\rule{\linewidth}{0.35pt}]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+\setlist[enumerate]{leftmargin=19pt,label=\arabic*.,labelsep=5pt,
+  topsep=0pt,itemsep=5pt,parsep=0pt,partopsep=0pt}
+\newcommand{\publication}[4]{%
+  \item \begin{minipage}[t]{\linewidth}\raggedright
+  \textbf{#1}\\[-1pt]
+  {\small #2}\\[-1pt]
+  {\small\textit{#3}\enspace #4}
+  \end{minipage}}
+
+\begin{document}
+
+{\fontsize{27}{30}\selectfont\bfseries Junqiao Fan}\hfill
+{\small\color{cvgray}Curriculum Vitae}
+
+Ph.D. Candidate (thesis submitted)\enspace\textbar\enspace
+Nanyang Technological University, Singapore\\
+School of Electrical and Electronic Engineering\enspace\textbar\enspace
+Expected graduation: December 2026
+
+{\small
+\href{mailto:fanj0019@e.ntu.edu.sg}{fanj0019@e.ntu.edu.sg}\enspace\textbar\enspace
+\href{https://fanjunqiao.github.io/junqiao-homepage/}{Homepage}\enspace\textbar\enspace
+\href{https://scholar.google.com/citations?user=5cEG4tIAAAAJ&hl=en}{Google Scholar}\enspace\textbar\enspace
+\href{https://github.com/FanJunqiao}{GitHub}\enspace\textbar\enspace
+\href{https://sg.linkedin.com/in/junqiao-fan-234134403}{LinkedIn}}
+
+{\small\textit{Open to postdoctoral opportunities.}}
+
+\section*{Research Interests}
+\textbf{Multimodal human perception:} Privacy-preserving mmWave radar sensing; human motion capture and human pose/mesh estimation.\\
+\textbf{Generative AI:} Human motion generation and modeling; diffusion and flow models.\\
+\textbf{Robotics:} Robot learning; multimodal human--robot interaction; human-centered embodied intelligence.
+
+\section*{Education \& Research Experience}
+\textbf{Nanyang Technological University}, Singapore\hfill 2022--Present\\
+Ph.D., School of Electrical and Electronic Engineering (thesis submitted).\\
+Supervisor: \href{https://personal.ntu.edu.sg/elhxie/}{Prof. Lihua Xie};
+Co-supervisor: \href{https://marsyang.site/}{Prof. Jianfei Yang}.
+
+\textbf{The Hong Kong Polytechnic University}, Hong Kong SAR\hfill 2018--2022\\
+B.Eng. in Computer Science; minor in Mathematics.
+
+\section*{Selected Publications}
+% Reverse chronological order by publication year; newest 2026 preprints first.
+% The original five selections are retained; only mmHRI and GIVE are added.
+\begin{enumerate}
+\publication
+{mmHRI: Towards Privacy-Preserving Human-Robot Interaction with Millimeter-Wave Radar}
+{\textbf{Junqiao Fan}, Yuxuan Hu, Bofan Lyu, Yanshuo Lu, Pengfei Liu, Jiarui Zhang, Fangqiang Ding, Lihua Xie, Gen Li, Jianfei Yang}
+{arXiv:2609.34220, 2026 (preprint).}
+{\href{https://arxiv.org/abs/2609.34220}{[Paper]}\enspace\href{https://fanjunqiao.github.io/mmHRI-site/}{[Project]}}
+
+\publication
+{GIVE: Grounding Human Gestures in Vision-Language-Action Models}
+{Pengfei Liu, Gen Li, \textbf{Junqiao Fan}, Boyu Ma, Jindou Jia, Yang Xiao, Jianfei Yang}
+{arXiv:2606.13435, 2026 (preprint).}
+{\href{https://arxiv.org/abs/2606.13435}{[Paper]}\enspace\href{https://luis-cloud-sg.github.io/GIVE-project/}{[Project]}}
+
+\publication
+{M4Human: A Large-Scale Multimodal mmWave Radar Benchmark for Human Mesh Reconstruction}
+{\textbf{Junqiao Fan}, Yunjiao Zhou, Yizhuo Yang, Xinyuan Cui, Jiarui Zhang, Lihua Xie, Jianfei Yang, Chris Xiaoxuan Lu, Fangqiang Ding}
+{IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026.}
+{\href{https://openaccess.thecvf.com/content/CVPR2026/html/Fan_M4Human_A_Large-Scale_Multimodal_mmWave_Radar_Benchmark_for_Human_Mesh_CVPR_2026_paper.html}{[Paper]}\enspace\href{https://fanjunqiao.github.io/M4Human-site/}{[Project]}}
+
+\publication
+{mmPred: Radar-based Human Motion Prediction in the Dark}
+{\textbf{Junqiao Fan}, Haocong Rao, Jiarui Zhang, Jianfei Yang, Lihua Xie}
+{AAAI Conference on Artificial Intelligence, 40(5):3777--3785, 2026.}
+{\href{https://ojs.aaai.org/index.php/AAAI/article/view/37378}{[Paper]}\enspace\href{https://fanjunqiao.github.io/mmPred-site/}{[Project]}}
+
+\publication
+{Diffusion Model Is a Good Pose Estimator from 3D RF-Vision}
+{\textbf{Junqiao Fan}, Jianfei Yang, Yuecong Xu, Lihua Xie}
+{European Conference on Computer Vision (ECCV), pp. 1--18, 2024.}
+{\href{https://arxiv.org/abs/2403.16198}{[Paper]}\enspace\href{https://fanjunqiao.github.io/mmDiff-site/}{[Project]}}
+
+\publication
+{Generative Dataset Distillation Using Min-Max Diffusion Model}
+{\textbf{Junqiao Fan}, Yunjiao Zhou, Min Chang Jordan Ren, Jianfei Yang}
+{European Conference on Computer Vision Workshops, pp. 60--67, 2024.}
+{\href{https://arxiv.org/abs/2503.18626}{[Paper]}}
+
+\publication
+{Federated Learning Driven Secure Internet of Medical Things}
+{\textbf{Junqiao Fan}, Xuehe Wang, Yanxiang Guo, Xiping Hu, Bin Hu}
+{IEEE Wireless Communications, 29(2):68--75, 2022.}
+{\href{https://doi.org/10.1109/MWC.008.00475}{[Paper]}}
+\end{enumerate}
+
+\section*{Honors \& Awards}
+\textbf{2nd Place, Generative Track}\hfill 2024\\
+\href{https://codalab.lisn.upsaclay.fr/competitions/19577}{First Dataset Distillation Challenge}, ECCV 2024.
+
+\begin{minipage}[t]{0.72\textwidth}
+\section*{Academic Service}
+\textbf{Journal Reviewer:} TMC, etc.\\
+\textbf{Conference Reviewer:} AAAI, ICLR, ICRA, etc.
+\end{minipage}\hfill
+\begin{minipage}[t]{0.24\textwidth}
+\section*{Skills}
+Python, MoCap, ROS2.
+\end{minipage}
+
+\end{document}

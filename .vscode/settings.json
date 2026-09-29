@@ -1,0 +1,16 @@
+{
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.tools": [
+    {
+      "name": "build-homepage-cv",
+      "command": "python3",
+      "args": ["%DIR%/../scripts/build_cv.py"]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "Build CV and update homepage",
+      "tools": ["build-homepage-cv"]
+    }
+  ]
+}

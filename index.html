@@ -1,200 +1,336 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Junqiao Fan - Ph.D. student at Nanyang Technological University. Research in human sensing, mmWave radar, embodied AI, and generative AI." />
-  <title>Junqiao Fan</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Junqiao Fan, Ph.D. researcher at Nanyang Technological University. Human sensing, generative AI, and privacy-preserving healthcare. Publications, code, and research demos.">
+  <meta property="og:title" content="Junqiao Fan · Human-centered AI">
+  <meta property="og:description" content="Research in human sensing, generative AI, and healthcare at Nanyang Technological University.">
+  <meta property="og:type" content="website">
+  <title>Junqiao Fan · Human-centered AI</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="assets/theme.js"></script>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#about">Junqiao Fan</a>
-      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
-      <div class="nav-links">
-        <a href="#about">about</a>
-        <a href="#news">news</a>
-        <a href="#publications">publications</a>
-        <a href="#awards">awards</a>
-        <a href="#contact">contact</a>
+      <a class="brand" href="#about" aria-label="Junqiao Fan, home"><span class="monogram">jf.</span><span>Junqiao Fan</span></a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links" hidden>Menu <span aria-hidden="true">＋</span></button>
+      <div id="nav-links" class="nav-links">
+        <a href="#about" class="active">About</a><a href="#news">News</a><a href="#publications">Publications</a><a href="mailto:fanj0019@e.ntu.edu.sg">Contact <span aria-hidden="true">↗</span></a>
       </div>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode" hidden>
+        <svg class="theme-moon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20.5 14A9 9 0 0 1 10 3.5 9 9 0 1 0 20.5 14Z"/></svg>
+        <svg class="theme-sun" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+        <span class="theme-label">Dark</span>
+      </button>
     </nav>
   </header>
-
-  <main class="container">
-    <section id="about" class="hero section anchor">
-      <div class="hero-text">
-        <p class="hero-kicker">Academic Homepage</p>
-        <h1>Junqiao Fan</h1>
-        <p class="subtitle">Ph.D. Student in Electrical and Electronic Engineering</p>
-        <p class="subtitle-meta"><a href="https://www.ntu.edu.sg/eee" target="_blank" rel="noreferrer">Nanyang Technological University</a> · Singapore</p>
-        <p class="alert">Looking for PostDoc opportunities. Email: <a href="mailto:fanj0019@e.ntu.edu.sg">fanj0019@e.ntu.edu.sg</a></p>
-
-        <p>
-          I am a Ph.D. student in the School of Electrical and Electronic Engineering at
-          Nanyang Technological University, Singapore. I am supervised by Prof. Lihua Xie
-          and co-supervised by Prof. Jianfei Yang.
-        </p>
-
-        <div class="overview-panel">
-          <h2>Overview</h2>
-          <p>
-            My research focuses on human-centered AI, enabling AI agents, robots, IoT systems,
-            and healthcare devices to perceive, understand, and interact with humans. My
-            long-term vision is to build warm and trustworthy AI assistants with strong human
-            awareness, supporting daily living and healthcare.
-          </p>
-          <p>
-            My current work advances this goal along three axes: privacy-preserving motion
-            capture using low-cost RF sensors such as mmWave radar; human motion modeling
-            with advanced generative AI; and healthcare AI for monitoring physical and mental
-            well-being with IoT devices.
-          </p>
-        </div>
-
-        <div class="quick-links" aria-label="External links">
-          <a href="https://scholar.google.com/citations?user=5cEG4tIAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
-          <a href="https://github.com/FanJunqiao" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="assets/Junqiao_Fan_CV.pdf" target="_blank" rel="noreferrer">CV</a>
-          <a href="mailto:fanj0019@e.ntu.edu.sg">Email</a>
-        </div>
+  <main id="main" class="container">
+    <section id="about" class="hero anchor" aria-labelledby="name">
+      <div class="hero-copy">
+        <h1 id="name">Junqiao Fan<span class="name-period">.</span></h1>
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> <span class="researcher-status">Ph.D. (thesis submitted)  </span> <span class="eyebrow-divider">/</span>NTU. Singapore</p>
+        <p>I am a final-year Ph.D. student in the School of Electrical and Electronic Engineering (EEE) at <a href="https://www.ntu.edu.sg/eee" target="_blank" rel="noopener noreferrer">Nanyang Technological University</a>. I have recently submited my thesis and is expected to graduate by December 2026. My research focuses on multimodal remote human sensing using advanced AI technologies. Recently, I am very interested in robot learning and how human perception can advance human-centered embodied intelligence.</p>
+        <p>During my Ph.D. studies, I am supervised by <a href="https://personal.ntu.edu.sg/elhxie/" target="_blank" rel="noopener noreferrer">Prof. Lihua Xie</a> in the NTU IoT Lab. I am also a visiting student in the NTU MARS Lab, co-supervised by <a href="https://marsyang.site/" target="_blank" rel="noopener noreferrer">Prof. Jianfei Yang</a>. I received my B.Eng. from The Hong Kong Polytechnic University, majoring in computer science and minoring in mathematics.</p>
+        <p>My research spans <strong>multimodal human perception</strong> (e.g., mmWave radar sensing), <strong>generative AI</strong> (e.g., human motion generation), and <strong>robotics</strong> (e.g., human–robot interaction). I work on privacy-preserving motion capture using mmWave radar, human motion generation, and multimodal human–robot interaction systems powered by human sensing technologies. I am always open to learn about new AI and robotics technologies, and my ultimate goal is to build warm, trustworthy AI assistants that perceive, understand, and interact with people.</p>
       </div>
-
-      <aside class="profile-card" aria-label="Profile card">
-        <img src="assets/profile.jpg" alt="Portrait of Junqiao Fan" class="profile-img" />
-        <p class="caption">Singapore, 2026</p>
-        <div class="profile-meta">
-          <div><strong>Current position</strong><br />Ph.D. Student, Year 4</div>
-          <div><strong>Affiliation</strong><br />IoT@EEE Lab, NTU</div>
-          <div><strong>Research</strong><br />Human Sensing · mmWave Radar · Embodied AI</div>
+      <figure class="profile">
+        <img src="assets/profile.webp" alt="Junqiao Fan" width="260" height="260" fetchpriority="high">
+        <div class="profile-links" aria-label="Profile links">
+          <a href="https://scholar.google.com/citations?user=5cEG4tIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m2 9 10-6 10 6-10 6L2 9Zm4 3v5c3 3 9 3 12 0v-5M22 9v8"/></svg></a>
+          <a href="https://github.com/FanJunqiao" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.3-4.3-2.1-6-2.6m12 5v-3.5c0-1 .1-1.5-.5-2.2 3-.3 6.2-1.5 6.2-6.8a5.3 5.3 0 0 0-1.4-3.7 5 5 0 0 0-.1-3.7s-1.1-.4-3.8 1.4a13.1 13.1 0 0 0-6.8 0C5.9 1.1 4.8 1.5 4.8 1.5a5 5 0 0 0-.1 3.7 5.3 5.3 0 0 0-1.4 3.7c0 5.3 3.2 6.5 6.2 6.8-.6.7-.6 1.4-.5 2.2v3.5"/></svg></a>
+          <a href="assets/Junqiao_Fan_CV.pdf?v=e025dcbfc942" target="_blank" rel="noopener noreferrer" aria-label="Download CV" title="CV"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8Zm0 0v5h5"/><text x="7" y="17" fill="currentColor" stroke="none" font-family="Arial,sans-serif" font-size="7" font-weight="700">CV</text></svg></a>
+          <a href="mailto:fanj0019@e.ntu.edu.sg" aria-label="Email Junqiao Fan" title="Email"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg></a>
+          <a id="wechat-link" href="assets/wechat.jpg" target="_blank" rel="noopener noreferrer" aria-label="WeChat QR code" title="WeChat"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14.7 10.4a7.1 7.1 0 0 0 .3-2C15 5.4 12.1 3 8.5 3S2 5.4 2 8.4c0 1.7.9 3.2 2.4 4.2L4 15l2.7-1.3a8 8 0 0 0 2.1.2"/><path d="M22 14c0-2.7-2.7-4.8-6-4.8s-6 2.1-6 4.8 2.7 4.8 6 4.8a8 8 0 0 0 1.8-.2l2.4 1.2-.4-2.2C21.2 16.7 22 15.4 22 14Z"/><g fill="currentColor" stroke="none"><circle cx="6.1" cy="7.3" r=".85"/><circle cx="10.7" cy="7.3" r=".85"/><circle cx="13.9" cy="13.4" r=".8"/><circle cx="18.1" cy="13.4" r=".8"/></g></svg></a>
         </div>
-      </aside>
+        <figcaption><span>Ph.D. @ NTU IoT Lab<br>Visiting Student @ NTU MARS Lab.</span><span>EEE, Nanyang Technological University </span><span class="profile-location"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg> Singapore</span></figcaption>
+      </figure>
+      <a class="opportunity" href="mailto:fanj0019@e.ntu.edu.sg"><span class="status-dot" aria-hidden="true"></span><span><strong>Open to postdoctoral opportunities.</strong> Let’s connect.</span><span aria-hidden="true">↗</span></a>
     </section>
-
-    <section id="news" class="section anchor">
-      <h2>news</h2>
+    <section id="news" class="section anchor" aria-labelledby="news-heading">
+      <div class="section-heading"><h2 id="news-heading">News</h2><span class="section-index" aria-hidden="true">01 / UPDATES</span></div>
       <div class="news-list">
-        <p><span class="date">2026</span><span class="news-text"><strong>M4Human</strong> is accepted to CVPR 2026: the current largest-scale mmWave radar benchmark dataset.</span></p>
-        <p><span class="date">2026</span><span class="news-text"><strong>mmPred</strong> is accepted tp AAAI 2026: the first RF-based motion prediction framework .</span></p>
-        <p><span class="date">2024</span><span class="news-text"><strong>mmDiff</strong> is accepted tp ECCV 2024: the first diffusion-basaed HPE framework for RF vision.</span></p>
-        <p><span class="date">2024</span><span class="news-text"><strong>2nd place award</strong> in the First Dataset Distillation Challenge of ECCV 2024.</span></p>
+        <div class="news-item"><time datetime="2026-02">2026 Feb</time><p><a href="#m4human">M4Human</a> is accepted to <strong>CVPR 2026</strong> — a large-scale multimodal mmWave radar benchmark.</p><span class="news-marker">Publication</span></div>
+        <div class="news-item"><time datetime="2025-11">2025 Nov</time><p><a href="#mmpred">mmPred</a> is accepted to <strong>AAAI 2026</strong>, exploring radar-based human motion prediction.</p><span class="news-marker">Publication</span></div>
+        <div class="news-item"><time datetime="2024-09">2024 Sep</time><p><strong>2nd place</strong> in the generative track of the <a href="https://codalab.lisn.upsaclay.fr/competitions/19577" target="_blank" rel="noopener noreferrer">First Dataset Distillation Challenge</a> at ECCV 2024.</p><span class="news-marker award-marker">Award</span></div>
+        <div class="news-item"><time datetime="2024-07">2024 Jul</time><p><a href="#mmdiff">mmDiff</a> is accepted to <strong>ECCV 2024</strong> for diffusion-based pose estimation from RF-vision.</p><span class="news-marker">Publication</span></div>
       </div>
     </section>
-
-    <section id="publications" class="section anchor">
-      <h2>selected publications</h2>
-
-      <article class="publication">
-        <a class="pub-media" href="assets/publication-overviews/m4human-overview.svg" target="_blank" rel="noreferrer">
-          <img src="assets/publication-overviews/m4human-overview.svg" alt="Overview preview for M4Human" class="pub-image" />
-        </a>
-        <div class="pub-body">
-          <p class="pub-badge">CVPR 2026</p>
-          <h3>M4Human: A Large-Scale Multimodal mmWave Radar Benchmark for Human Mesh Reconstruction</h3>
-          <p class="authors"><strong>Junqiao Fan</strong>, Yunjiao Zhou, Yizhuo Yang, Xinyuan Cui, Jiarui Zhang, Lihua Xie, Jianfei Yang, Chris Xiaoxuan Lu, Fangqiang Ding</p>
-          <p class="venue">In IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2026.</p>
-          <p class="links"><a href="assets/publication-overviews/m4human-overview.svg" target="_blank" rel="noreferrer">Overview</a> <a href="#" aria-disabled="true">Project</a> <a href="#" aria-disabled="true">PDF</a> <a href="#" aria-disabled="true">File</a></p>
+    <section id="publications" class="section publications-section anchor" aria-labelledby="publications-heading">
+      <div class="section-heading"><h2 id="publications-heading">Publications</h2><a class="text-link" href="https://scholar.google.com/citations?user=5cEG4tIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a></div>
+      <div class="publication-tools" hidden>
+        <div class="filters" role="group" aria-label="Filter publications by research area">
+          <button class="filter active" data-filter="all" aria-pressed="true">All <span data-count="all">9</span></button>
+          <button class="filter" data-filter="sensing" aria-pressed="false">Multimodal Human Sensing <span data-count="sensing">5</span></button>
+          <button class="filter" data-filter="generative" aria-pressed="false">Generative AI <span data-count="generative">4</span></button>
+          <button class="filter" data-filter="robotics" aria-pressed="false">Robotics <span data-count="robotics">3</span></button>
+          <button class="filter" data-filter="healthcare" aria-pressed="false">Healthcare AI <span data-count="healthcare">1</span></button>
         </div>
-      </article>
-
-      <article class="publication">
-        <a class="pub-media" href="assets/publication-overviews/mmpred-overview.svg" target="_blank" rel="noreferrer">
-          <img src="assets/publication-overviews/mmpred-overview.svg" alt="Overview preview for mmPred" class="pub-image" />
-        </a>
-        <div class="pub-body">
-          <p class="pub-badge">AAAI 2026</p>
-          <h3>mmPred: Radar-Based Human Motion Prediction in the Dark</h3>
-          <p class="authors"><strong>Junqiao Fan</strong>, Haocong Rao, Jiarui Zhang, Jianfei Yang, Lihua Xie</p>
-          <p class="venue">Proceedings of the AAAI Conference on Artificial Intelligence, 2026, pp. 3777-3785.</p>
-          <p class="links"><a href="assets/publication-overviews/mmpred-overview.svg" target="_blank" rel="noreferrer">Overview</a> <a href="#" aria-disabled="true">Code</a> <a href="#" aria-disabled="true">PDF</a> <a href="#" aria-disabled="true">File</a></p>
-        </div>
-      </article>
-
-      <article class="publication">
-        <a class="pub-media" href="assets/publication-overviews/rf-vision-overview.svg" target="_blank" rel="noreferrer">
-          <img src="assets/publication-overviews/rf-vision-overview.svg" alt="Overview preview for Diffusion Model Is a Good Pose Estimator from 3D RF-Vision" class="pub-image" />
-        </a>
-        <div class="pub-body">
-          <p class="pub-badge">ECCV 2024</p>
-          <h3>Diffusion Model Is a Good Pose Estimator from 3D RF-Vision</h3>
-          <p class="authors"><strong>Junqiao Fan</strong>, Jianfei Yang, Yuecong Xu, Lihua Xie</p>
-          <p class="venue">In European Conference on Computer Vision, 2024, pp. 1-18.</p>
-          <p class="links"><a href="assets/publication-overviews/rf-vision-overview.svg" target="_blank" rel="noreferrer">Overview</a> <a href="#" aria-disabled="true">Code</a> <a href="#" aria-disabled="true">PDF</a> <a href="#" aria-disabled="true">File</a></p>
-        </div>
-      </article>
-
-      <article class="publication">
-        <a class="pub-media" href="assets/publication-overviews/dataset-distillation-overview.svg" target="_blank" rel="noreferrer">
-          <img src="assets/publication-overviews/dataset-distillation-overview.svg" alt="Overview preview for Generative Dataset Distillation Using Min-Max Diffusion Model" class="pub-image" />
-        </a>
-        <div class="pub-body">
-          <p class="pub-badge">ECCV Workshop 2024</p>
-          <h3>Generative Dataset Distillation Using Min-Max Diffusion Model</h3>
-          <p class="authors"><strong>Junqiao Fan</strong>, Yunjiao Zhou, Min Chang Jordan Ren, Jianfei Yang</p>
-          <p class="venue">European Conference on Computer Vision Workshops, 2024, pp. 60-67.</p>
-          <p class="links"><a href="assets/publication-overviews/dataset-distillation-overview.svg" target="_blank" rel="noreferrer">Overview</a> <a href="#" aria-disabled="true">Code</a> <a href="#" aria-disabled="true">PDF</a> <a href="#" aria-disabled="true">File</a></p>
-        </div>
-      </article>
-
-      <article class="publication">
-        <a class="pub-media" href="assets/publication-overviews/iomt-overview.svg" target="_blank" rel="noreferrer">
-          <img src="assets/publication-overviews/iomt-overview.svg" alt="Overview preview for Federated Learning Driven Secure Internet of Medical Things" class="pub-image" />
-        </a>
-        <div class="pub-body">
-          <p class="pub-badge">IEEE Wireless Communications 2022</p>
-          <h3>Federated Learning Driven Secure Internet of Medical Things</h3>
-          <p class="authors"><strong>Junqiao Fan</strong>, Xuehe Wang, Yanxiang Guo, Xiping Hu, Bin Hu</p>
-          <p class="venue">IEEE Wireless Communications, vol. 29, no. 2, pp. 68-75, 2022.</p>
-          <p class="links"><a href="assets/publication-overviews/iomt-overview.svg" target="_blank" rel="noreferrer">Overview</a> <a href="#" aria-disabled="true">PDF</a> <a href="#" aria-disabled="true">File</a></p>
-        </div>
-      </article>
-    </section>
-
-    <section id="education" class="section anchor">
-      <h2>education</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <span class="date">2022 - Current</span>
-          <div><strong>Nanyang Technological University</strong><br />Ph.D. Student, School of Electrical and Electronic Engineering</div>
-        </div>
-        <div class="timeline-item">
-          <span class="date">2018 - 2022</span>
-          <div><strong>The Hong Kong Polytechnic University</strong><br />B.Eng. in Computer Science</div>
-        </div>
+        <label class="search-box"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">Search publications</span><input id="publication-search" type="search" placeholder="Search papers…" autocomplete="off"></label>
       </div>
-    </section>
+      <div class="publication-meta"><p id="publication-count" aria-live="polite" aria-atomic="true">9 publications</p><div class="publication-actions" hidden><button id="motion-toggle" class="text-button" aria-pressed="false">Pause previews</button><span class="meta-divider" aria-hidden="true">/</span><label><span class="sr-only">Sort publications</span><select id="publication-sort"><option value="selected">Selected first</option><option value="newest">Newest first</option><option value="oldest">Oldest first</option></select></label></div></div>
+      <noscript><p class="noscript-note">All publications are shown below. Enable JavaScript for filters and video previews.</p></noscript>
+      <div id="publication-list">
+        <!-- PUBLICATIONS:START -->
+<article class="publication" id="mmhri" data-year="2026" data-categories="sensing robotics" data-search="mmhri mmhri: towards privacy-preserving human-robot interaction with millimeter-wave radar arxiv 2026 2026 junqiao fan yuxuan hu bofan lyu yanshuo lu pengfei liu jiarui zhang fangqiang ding lihua xie gen li jianfei yang radar-guided human–robot interaction through privacy curtains, connecting human pose and action sensing to a vla policy. multimodal human sensing · robotics" aria-labelledby="mmhri-title">
+  <figure class="pub-figure">
+    <a class="pub-media" href="assets/media/mmhri-demo.mp4" target="_blank" rel="noopener noreferrer" aria-label="Watch the full mmHRI demo (opens in a new tab)">
+      <img src="assets/media/mmhri-poster.webp" alt="Radar → privacy-preserving robot assistance" width="720" height="440" loading="lazy" decoding="async"><video data-src="assets/media/mmhri-loop.mp4" poster="assets/media/mmhri-poster.webp" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+    </a>
+    <figcaption><span>Radar → privacy-preserving robot assistance</span></figcaption>
+  </figure>
+  <div class="pub-body">
+    <div class="pub-topline"><p class="pub-venue" data-tone="amber">arXiv 2026</p><span class="pub-topic">Multimodal Human Sensing · Robotics</span></div>
+    <h3 id="mmhri-title"><a href="https://arxiv.org/abs/2609.34220" target="_blank" rel="noopener noreferrer">mmHRI: Towards Privacy-Preserving Human-Robot Interaction with Millimeter-Wave Radar</a></h3>
+    <p class="pub-authors"><strong>Junqiao Fan</strong>, Yuxuan Hu, Bofan Lyu, Yanshuo Lu, Pengfei Liu, Jiarui Zhang, Fangqiang Ding, Lihua Xie, Gen Li, Jianfei Yang</p>
+    <p class="pub-summary">Radar-guided human–robot interaction through privacy curtains, connecting human pose and action sensing to a VLA policy.</p>
+    <div class="pub-links"><a class="pub-link paper-link" href="https://arxiv.org/abs/2609.34220" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8Zm0 0v5h5M8 12h8M8 16h6"/></svg>Paper</a><a class="pub-link pdf-link" href="https://arxiv.org/pdf/2609.34220" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M5 17v4h14v-4"/></svg>PDF</a><a class="pub-link code-link" href="https://github.com/FanJunqiao/mmHRI" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18"/></svg>Code</a><a class="pub-link website-link" href="https://fanjunqiao.github.io/mmHRI-site/" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18"/></svg>Website</a><a class="pub-link video-link" href="assets/media/mmhri-demo.mp4" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m10 9 5 3-5 3Z"/></svg>Video</a><a class="pub-link bib-link" href="assets/bib/mmhri.bib" download data-cite="mmhri" aria-label="BibTeX for mmHRI"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 4H6c-2 0-2 2-2 4v1c0 2-1 3-2 3 1 0 2 1 2 3v1c0 2 0 4 2 4h2m8-16h2c2 0 2 2 2 4v1c0 2 1 3 2 3-1 0-2 1-2 3v1c0 2 0 4-2 4h-2"/></svg>BibTeX</a></div>
 
-    <section id="awards" class="section anchor">
-      <h2>honors and awards</h2>
-      <ul>
-        <li>2nd place, The First Dataset Distillation Challenge of ECCV 2024.</li>
-      </ul>
-    </section>
+    <template class="bibtex">@article{fan2026mmhri,
+  title = {mmHRI: Towards Privacy-Preserving Human-Robot Interaction with Millimeter-Wave Radar},
+  author = {Fan, Junqiao and Hu, Yuxuan and Lyu, Bofan and Lu, Yanshuo and Liu, Pengfei and Zhang, Jiarui and Ding, Fangqiang and Xie, Lihua and Li, Gen and Yang, Jianfei},
+  journal = {arXiv preprint arXiv:2609.34220},
+  year = {2026},
+  url = {https://arxiv.org/abs/2609.34220},
+}
+</template>
+  </div>
+</article>
+<article class="publication" id="give" data-year="2026" data-categories="robotics" data-search="give give: grounding human gestures in vision-language-action models arxiv 2026 2026 pengfei liu gen li junqiao fan boyu ma jindou jia yang xiao jianfei yang grounding gestures in vision-language-action models through visual hand cues and semantic guidance for robot manipulation. robotics" aria-labelledby="give-title">
+  <figure class="pub-figure">
+    <a class="pub-media" href="https://luis-cloud-sg.github.io/GIVE-project/static/videos/real_world/real-time%20experiments.mp4" target="_blank" rel="noopener noreferrer" aria-label="Watch the full GIVE demo (opens in a new tab)">
+      <img src="assets/media/give-poster.webp" alt="Human gestures → robot manipulation" width="720" height="440" loading="lazy" decoding="async"><video data-src="assets/media/give-loop.mp4" poster="assets/media/give-poster.webp" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+    </a>
+    <figcaption><span>Human gestures → robot manipulation</span></figcaption>
+  </figure>
+  <div class="pub-body">
+    <div class="pub-topline"><p class="pub-venue" data-tone="amber">arXiv 2026</p><span class="pub-topic">Robotics</span></div>
+    <h3 id="give-title"><a href="https://arxiv.org/abs/2606.13435" target="_blank" rel="noopener noreferrer">GIVE: Grounding Human Gestures in Vision-Language-Action Models</a></h3>
+    <p class="pub-authors">Pengfei Liu, Gen Li, <strong>Junqiao Fan</strong>, Boyu Ma, Jindou Jia, Yang Xiao, Jianfei Yang</p>
+    <p class="pub-summary">Grounding gestures in vision-language-action models through visual hand cues and semantic guidance for robot manipulation.</p>
+    <div class="pub-links"><a class="pub-link paper-link" href="https://arxiv.org/abs/2606.13435" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8Zm0 0v5h5M8 12h8M8 16h6"/></svg>Paper</a><a class="pub-link pdf-link" href="https://arxiv.org/pdf/2606.13435" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M5 17v4h14v-4"/></svg>PDF</a><a class="pub-link website-link" href="https://luis-cloud-sg.github.io/GIVE-project/" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18"/></svg>Website</a><a class="pub-link video-link" href="https://luis-cloud-sg.github.io/GIVE-project/static/videos/real_world/real-time%20experiments.mp4" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m10 9 5 3-5 3Z"/></svg>Video</a><a class="pub-link bib-link" href="assets/bib/give.bib" download data-cite="give" aria-label="BibTeX for GIVE"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 4H6c-2 0-2 2-2 4v1c0 2-1 3-2 3 1 0 2 1 2 3v1c0 2 0 4 2 4h2m8-16h2c2 0 2 2 2 4v1c0 2 1 3 2 3-1 0-2 1-2 3v1c0 2 0 4-2 4h-2"/></svg>BibTeX</a></div>
+    <div class="pub-citations"><a class="pub-link citation-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5cEG4tIAAAAJ&amp;pagesize=100&amp;citation_for_view=5cEG4tIAAAAJ:UebtZRa9Y70C" target="_blank" rel="noopener noreferrer" title="Google Scholar · 1 citations · updated 2026-09-29T08:48:06Z" aria-label="Google Scholar: 1 citations for GIVE"><span class="scholar-label"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m2 9 10-6 10 6-10 6L2 9Zm4 3v5c3 3 9 3 12 0v-5M22 9v8"/></svg>Scholar</span><span class="citation-count">1</span></a></div>
+    <template class="bibtex">@article{fan2026give,
+  title = {GIVE: Grounding Human Gestures in Vision-Language-Action Models},
+  author = {Liu, Pengfei and Li, Gen and Fan, Junqiao and Ma, Boyu and Jia, Jindou and Xiao, Yang and Yang, Jianfei},
+  journal = {arXiv preprint arXiv:2606.13435},
+  year = {2026},
+  url = {https://arxiv.org/abs/2606.13435},
+}
+</template>
+  </div>
+</article>
+<article class="publication" id="m4human" data-year="2026" data-categories="sensing" data-search="m4human m4human: a large-scale multimodal mmwave radar benchmark for human mesh reconstruction cvpr 2026 2026 junqiao fan yunjiao zhou yizhuo yang xinyuan cui jiarui zhang lihua xie jianfei yang chris xiaoxuan lu fangqiang ding a multimodal benchmark for human mesh reconstruction: 661k frames, 50 actions, and 20 subjects. multimodal human sensing" aria-labelledby="m4human-title">
+  <figure class="pub-figure">
+    <a class="pub-media" href="https://fanjunqiao.github.io/M4Human-site/static/dataset_videos/combined_output_depth_43.mp4" target="_blank" rel="noopener noreferrer" aria-label="Watch the full M4Human demo (opens in a new tab)">
+      <img src="assets/media/m4human-poster.webp" alt="Multimodal motion capture" width="720" height="440" loading="lazy" decoding="async"><video data-src="assets/media/m4human-loop.mp4" poster="assets/media/m4human-poster.webp" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+    </a>
+    <figcaption><span>Multimodal motion capture</span></figcaption>
+  </figure>
+  <div class="pub-body">
+    <div class="pub-topline"><p class="pub-venue" data-tone="blue">CVPR 2026</p><span class="pub-topic">Multimodal Human Sensing</span></div>
+    <h3 id="m4human-title"><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Fan_M4Human_A_Large-Scale_Multimodal_mmWave_Radar_Benchmark_for_Human_Mesh_CVPR_2026_paper.html" target="_blank" rel="noopener noreferrer">M4Human: A Large-Scale Multimodal mmWave Radar Benchmark for Human Mesh Reconstruction</a></h3>
+    <p class="pub-authors"><strong>Junqiao Fan</strong>, Yunjiao Zhou, Yizhuo Yang, Xinyuan Cui, Jiarui Zhang, Lihua Xie, Jianfei Yang, Chris Xiaoxuan Lu, Fangqiang Ding</p>
+    <p class="pub-summary">A multimodal benchmark for human mesh reconstruction: 661K frames, 50 actions, and 20 subjects.</p>
+    <div class="pub-links"><a class="pub-link paper-link" href="https://openaccess.thecvf.com/content/CVPR2026/html/Fan_M4Human_A_Large-Scale_Multimodal_mmWave_Radar_Benchmark_for_Human_Mesh_CVPR_2026_paper.html" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8Zm0 0v5h5M8 12h8M8 16h6"/></svg>Paper</a><a class="pub-link pdf-link" href="https://openaccess.thecvf.com/content/CVPR2026/papers/Fan_M4Human_A_Large-Scale_Multimodal_mmWave_Radar_Benchmark_for_Human_Mesh_CVPR_2026_paper.pdf" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M5 17v4h14v-4"/></svg>PDF</a><a class="pub-link code-link" href="https://github.com/FanJunqiao/M4Human" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18"/></svg>Code<span class="stars" title="GitHub stars · 2026-09-29">☆ 61</span></a><a class="pub-link website-link" href="https://fanjunqiao.github.io/M4Human-site/" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18"/></svg>Website</a><a class="pub-link video-link" href="https://fanjunqiao.github.io/M4Human-site/static/dataset_videos/combined_output_depth_43.mp4" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m10 9 5 3-5 3Z"/></svg>Video</a><a class="pub-link bib-link" href="assets/bib/m4human.bib" download data-cite="m4human" aria-label="BibTeX for M4Human"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 4H6c-2 0-2 2-2 4v1c0 2-1 3-2 3 1 0 2 1 2 3v1c0 2 0 4 2 4h2m8-16h2c2 0 2 2 2 4v1c0 2 1 3 2 3-1 0-2 1-2 3v1c0 2 0 4-2 4h-2"/></svg>BibTeX</a></div>
+    <div class="pub-citations"><a class="pub-link citation-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5cEG4tIAAAAJ&amp;pagesize=100&amp;citation_for_view=5cEG4tIAAAAJ:LkGwnXOMwfcC" target="_blank" rel="noopener noreferrer" title="Google Scholar · 11 citations · updated 2026-09-29T08:48:06Z" aria-label="Google Scholar: 11 citations for M4Human"><span class="scholar-label"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m2 9 10-6 10 6-10 6L2 9Zm4 3v5c3 3 9 3 12 0v-5M22 9v8"/></svg>Scholar</span><span class="citation-count">11</span></a></div>
+    <template class="bibtex">@inproceedings{fan2026m4human,
+  title = {M4Human: A Large-Scale Multimodal mmWave Radar Benchmark for Human Mesh Reconstruction},
+  author = {Fan, Junqiao and Zhou, Yunjiao and Yang, Yizhuo and Cui, Xinyuan and Zhang, Jiarui and Xie, Lihua and Yang, Jianfei and Lu, Chris Xiaoxuan and Ding, Fangqiang},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2026},
+  pages = {42836--42846},
+  url = {https://openaccess.thecvf.com/content/CVPR2026/html/Fan_M4Human_A_Large-Scale_Multimodal_mmWave_Radar_Benchmark_for_Human_Mesh_CVPR_2026_paper.html},
+}
+</template>
+  </div>
+</article>
+<article class="publication" id="mmpred" data-year="2026" data-categories="sensing generative" data-search="mmpred mmpred: radar-based human motion prediction in the dark aaai 2026 2026 junqiao fan haocong rao jiarui zhang jianfei yang lihua xie predicting future human motion from radar with a diffusion model, even in the dark. multimodal human sensing · generative ai" aria-labelledby="mmpred-title">
+  <figure class="pub-figure">
+    <a class="pub-media" href="https://fanjunqiao.github.io/mmPred-site/static/videos/demo_small.mp4" target="_blank" rel="noopener noreferrer" aria-label="Watch the full mmPred demo (opens in a new tab)">
+      <img src="assets/media/mmpred-poster.webp" alt="Radar → future motion" width="720" height="440" loading="lazy" decoding="async"><video data-src="assets/media/mmpred-loop.mp4" poster="assets/media/mmpred-poster.webp" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+    </a>
+    <figcaption><span>Radar → future motion</span></figcaption>
+  </figure>
+  <div class="pub-body">
+    <div class="pub-topline"><p class="pub-venue" data-tone="violet">AAAI 2026</p><span class="pub-topic">Multimodal Human Sensing · Generative AI</span></div>
+    <h3 id="mmpred-title"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/37378" target="_blank" rel="noopener noreferrer">mmPred: Radar-based Human Motion Prediction in the Dark</a></h3>
+    <p class="pub-authors"><strong>Junqiao Fan</strong>, Haocong Rao, Jiarui Zhang, Jianfei Yang, Lihua Xie</p>
+    <p class="pub-summary">Predicting future human motion from radar with a diffusion model, even in the dark.</p>
+    <div class="pub-links"><a class="pub-link paper-link" href="https://ojs.aaai.org/index.php/AAAI/article/view/37378" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8Zm0 0v5h5M8 12h8M8 16h6"/></svg>Paper</a><a class="pub-link pdf-link" href="https://ojs.aaai.org/index.php/AAAI/article/download/37378/41340" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M5 17v4h14v-4"/></svg>PDF</a><a class="pub-link code-link" href="https://github.com/FanJunqiao/mmPred" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18"/></svg>Code<span class="stars" title="GitHub stars · 2026-09-29">☆ 6</span></a><a class="pub-link website-link" href="https://fanjunqiao.github.io/mmPred-site/" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18"/></svg>Website</a><a class="pub-link video-link" href="https://fanjunqiao.github.io/mmPred-site/static/videos/demo_small.mp4" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m10 9 5 3-5 3Z"/></svg>Video</a><a class="pub-link bib-link" href="assets/bib/mmpred.bib" download data-cite="mmpred" aria-label="BibTeX for mmPred"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 4H6c-2 0-2 2-2 4v1c0 2-1 3-2 3 1 0 2 1 2 3v1c0 2 0 4 2 4h2m8-16h2c2 0 2 2 2 4v1c0 2 1 3 2 3-1 0-2 1-2 3v1c0 2 0 4-2 4h-2"/></svg>BibTeX</a></div>
+    <div class="pub-citations"><a class="pub-link citation-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5cEG4tIAAAAJ&amp;pagesize=100&amp;citation_for_view=5cEG4tIAAAAJ:_FxGoFyzp5QC" target="_blank" rel="noopener noreferrer" title="Google Scholar · 9 citations · updated 2026-09-29T08:48:06Z" aria-label="Google Scholar: 9 citations for mmPred"><span class="scholar-label"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m2 9 10-6 10 6-10 6L2 9Zm4 3v5c3 3 9 3 12 0v-5M22 9v8"/></svg>Scholar</span><span class="citation-count">9</span></a></div>
+    <template class="bibtex">@article{fan2026mmpred,
+  title = {mmPred: Radar-based Human Motion Prediction in the Dark},
+  author = {Fan, Junqiao and Rao, Haocong and Zhang, Jiarui and Yang, Jianfei and Xie, Lihua},
+  journal = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  year = {2026},
+  volume = {40},
+  number = {5},
+  pages = {3777--3785},
+  doi = {10.1609/aaai.v40i5.37378},
+  url = {https://ojs.aaai.org/index.php/AAAI/article/view/37378},
+}
+</template>
+  </div>
+</article>
+<article class="publication" id="mmdiff" data-year="2024" data-categories="sensing generative" data-search="mmdiff diffusion model is a good pose estimator from 3d rf-vision eccv 2024 2024 junqiao fan jianfei yang yuecong xu lihua xie diffusion-based human pose estimation that handles noisy and incomplete mmwave radar signals. multimodal human sensing · generative ai" aria-labelledby="mmdiff-title">
+  <figure class="pub-figure">
+    <a class="pub-media" href="https://fanjunqiao.github.io/mmDiff-site/static/videos/mmDiff%20site.mp4" target="_blank" rel="noopener noreferrer" aria-label="Watch the full mmDiff demo (opens in a new tab)">
+      <img src="assets/media/mmdiff-poster.webp" alt="Radar → human pose" width="720" height="440" loading="lazy" decoding="async"><video data-src="assets/media/mmdiff-loop.mp4" poster="assets/media/mmdiff-poster.webp" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+    </a>
+    <figcaption><span>Radar → human pose</span></figcaption>
+  </figure>
+  <div class="pub-body">
+    <div class="pub-topline"><p class="pub-venue" data-tone="teal">ECCV 2024</p><span class="pub-topic">Multimodal Human Sensing · Generative AI</span></div>
+    <h3 id="mmdiff-title"><a href="https://arxiv.org/abs/2403.16198" target="_blank" rel="noopener noreferrer">Diffusion Model Is a Good Pose Estimator from 3D RF-Vision</a></h3>
+    <p class="pub-authors"><strong>Junqiao Fan</strong>, Jianfei Yang, Yuecong Xu, Lihua Xie</p>
+    <p class="pub-summary">Diffusion-based human pose estimation that handles noisy and incomplete mmWave radar signals.</p>
+    <div class="pub-links"><a class="pub-link paper-link" href="https://arxiv.org/abs/2403.16198" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8Zm0 0v5h5M8 12h8M8 16h6"/></svg>Paper</a><a class="pub-link pdf-link" href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/02408.pdf" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M5 17v4h14v-4"/></svg>PDF</a><a class="pub-link code-link" href="https://github.com/FanJunqiao/mmDiff" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18"/></svg>Code<span class="stars" title="GitHub stars · 2026-09-29">☆ 29</span></a><a class="pub-link website-link" href="https://fanjunqiao.github.io/mmDiff-site/" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18"/></svg>Website</a><a class="pub-link video-link" href="https://fanjunqiao.github.io/mmDiff-site/static/videos/mmDiff%20site.mp4" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m10 9 5 3-5 3Z"/></svg>Video</a><a class="pub-link supplement-link" href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/02408-supp.pdf" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8Zm0 0v5h5M8 12h8M8 16h6"/></svg>Supplement</a><a class="pub-link bib-link" href="assets/bib/mmdiff.bib" download data-cite="mmdiff" aria-label="BibTeX for mmDiff"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 4H6c-2 0-2 2-2 4v1c0 2-1 3-2 3 1 0 2 1 2 3v1c0 2 0 4 2 4h2m8-16h2c2 0 2 2 2 4v1c0 2 1 3 2 3-1 0-2 1-2 3v1c0 2 0 4-2 4h-2"/></svg>BibTeX</a></div>
+    <div class="pub-citations"><a class="pub-link citation-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5cEG4tIAAAAJ&amp;pagesize=100&amp;citation_for_view=5cEG4tIAAAAJ:zYLM7Y9cAGgC" target="_blank" rel="noopener noreferrer" title="Google Scholar · 43 citations · updated 2026-09-29T08:48:06Z" aria-label="Google Scholar: 43 citations for mmDiff"><span class="scholar-label"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m2 9 10-6 10 6-10 6L2 9Zm4 3v5c3 3 9 3 12 0v-5M22 9v8"/></svg>Scholar</span><span class="citation-count">43</span></a></div>
+    <template class="bibtex">@inproceedings{fan2024mmdiff,
+  title = {Diffusion Model Is a Good Pose Estimator from 3D RF-Vision},
+  author = {Fan, Junqiao and Yang, Jianfei and Xu, Yuecong and Xie, Lihua},
+  booktitle = {European Conference on Computer Vision},
+  year = {2024},
+  pages = {1--18},
+  url = {https://arxiv.org/abs/2403.16198},
+}
+</template>
+  </div>
+</article>
+<article class="publication" id="neuralmusic" data-year="2026" data-categories="sensing robotics" data-search="neuralmusic neuralmusic: a hybrid neural-subspace framework for robot sound source localization iros 2026 2026 yizhuo yang junqiao fan shenghai yuan lihua xie combining learned spatial representations with music subspace estimation for robot sound source localization. multimodal human sensing · robotics" aria-labelledby="neuralmusic-title">
+  <figure class="pub-figure">
+    <a class="pub-media" href="https://arxiv.org/abs/2606.18664" target="_blank" rel="noopener noreferrer" aria-label="Read NeuralMUSIC (opens in a new tab)">
+      <img src="assets/media/neuralmusic.webp" alt="Neural–subspace robot audition" width="720" height="440" loading="lazy" decoding="async">
+    </a>
+    <figcaption><span>Neural–subspace robot audition</span></figcaption>
+  </figure>
+  <div class="pub-body">
+    <div class="pub-topline"><p class="pub-venue" data-tone="blue">IROS 2026</p><span class="pub-topic">Multimodal Human Sensing · Robotics</span></div>
+    <h3 id="neuralmusic-title"><a href="https://arxiv.org/abs/2606.18664" target="_blank" rel="noopener noreferrer">NeuralMUSIC: A Hybrid Neural-Subspace Framework for Robot Sound Source Localization</a></h3>
+    <p class="pub-authors">Yizhuo Yang, <strong>Junqiao Fan</strong>, Shenghai Yuan, Lihua Xie</p>
+    <p class="pub-summary">Combining learned spatial representations with MUSIC subspace estimation for robot sound source localization.</p>
+    <div class="pub-links"><a class="pub-link paper-link" href="https://arxiv.org/abs/2606.18664" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8Zm0 0v5h5M8 12h8M8 16h6"/></svg>Paper</a><a class="pub-link pdf-link" href="https://arxiv.org/pdf/2606.18664" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M5 17v4h14v-4"/></svg>PDF</a><a class="pub-link bib-link" href="assets/bib/neuralmusic.bib" download data-cite="neuralmusic" aria-label="BibTeX for NeuralMUSIC"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 4H6c-2 0-2 2-2 4v1c0 2-1 3-2 3 1 0 2 1 2 3v1c0 2 0 4 2 4h2m8-16h2c2 0 2 2 2 4v1c0 2 1 3 2 3-1 0-2 1-2 3v1c0 2 0 4-2 4h-2"/></svg>BibTeX</a></div>
 
-    <section id="contact" class="section anchor contact-grid">
-      <div>
-        <h2>contact</h2>
-        <p>Email: <a href="mailto:fanj0019@e.ntu.edu.sg">fanj0019@e.ntu.edu.sg</a></p>
-        <p>Google Scholar: <a href="https://scholar.google.com/citations?user=5cEG4tIAAAAJ&hl=en" target="_blank" rel="noreferrer">Junqiao Fan</a></p>
-        <p>GitHub: <a href="https://github.com/FanJunqiao" target="_blank" rel="noreferrer">FanJunqiao</a></p>
+    <template class="bibtex">@inproceedings{fan2026neuralmusic,
+  title = {NeuralMUSIC: A Hybrid Neural-Subspace Framework for Robot Sound Source Localization},
+  author = {Yang, Yizhuo and Fan, Junqiao and Yuan, Shenghai and Xie, Lihua},
+  booktitle = {2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year = {2026},
+  url = {https://arxiv.org/abs/2606.18664},
+}
+</template>
+  </div>
+</article>
+<article class="publication" id="smamdiff" data-year="2025" data-categories="generative" data-search="smamdiff smamdiff: spatial mamba for stochastic human motion prediction ieee cloudcom 2025 2025 junqiao fan pengfei liu haocong rao a spatial mamba diffusion model with residual-dct motion encoding for coherent, diverse human motion prediction. generative ai" aria-labelledby="smamdiff-title">
+  <figure class="pub-figure">
+    <a class="pub-media" href="https://arxiv.org/abs/2512.00355" target="_blank" rel="noopener noreferrer" aria-label="Read SMamDiff (opens in a new tab)">
+      <img src="assets/media/smamdiff.webp" alt="Spatial Mamba for future human motion" width="720" height="440" loading="lazy" decoding="async">
+    </a>
+    <figcaption><span>Spatial Mamba for future human motion</span></figcaption>
+  </figure>
+  <div class="pub-body">
+    <div class="pub-topline"><p class="pub-venue" data-tone="rose">IEEE CloudCom 2025</p><span class="pub-topic">Generative AI</span></div>
+    <h3 id="smamdiff-title"><a href="https://arxiv.org/abs/2512.00355" target="_blank" rel="noopener noreferrer">SMamDiff: Spatial Mamba for Stochastic Human Motion Prediction</a></h3>
+    <p class="pub-authors"><strong>Junqiao Fan</strong>, Pengfei Liu, Haocong Rao</p>
+    <p class="pub-summary">A spatial Mamba diffusion model with residual-DCT motion encoding for coherent, diverse human motion prediction.</p>
+    <div class="pub-links"><a class="pub-link paper-link" href="https://arxiv.org/abs/2512.00355" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8Zm0 0v5h5M8 12h8M8 16h6"/></svg>Paper</a><a class="pub-link pdf-link" href="https://arxiv.org/pdf/2512.00355" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M5 17v4h14v-4"/></svg>PDF</a><a class="pub-link bib-link" href="assets/bib/smamdiff.bib" download data-cite="smamdiff" aria-label="BibTeX for SMamDiff"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 4H6c-2 0-2 2-2 4v1c0 2-1 3-2 3 1 0 2 1 2 3v1c0 2 0 4 2 4h2m8-16h2c2 0 2 2 2 4v1c0 2 1 3 2 3-1 0-2 1-2 3v1c0 2 0 4-2 4h-2"/></svg>BibTeX</a></div>
+    <div class="pub-citations"><a class="pub-link citation-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5cEG4tIAAAAJ&amp;pagesize=100&amp;citation_for_view=5cEG4tIAAAAJ:ufrVoPGSRksC" target="_blank" rel="noopener noreferrer" title="Google Scholar · 1 citations · updated 2026-09-29T08:48:06Z" aria-label="Google Scholar: 1 citations for SMamDiff"><span class="scholar-label"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m2 9 10-6 10 6-10 6L2 9Zm4 3v5c3 3 9 3 12 0v-5M22 9v8"/></svg>Scholar</span><span class="citation-count">1</span></a></div>
+    <template class="bibtex">@inproceedings{fan2025smamdiff,
+  title = {SMamDiff: Spatial Mamba for Stochastic Human Motion Prediction},
+  author = {Fan, Junqiao and Liu, Pengfei and Rao, Haocong},
+  booktitle = {2025 IEEE International Conference on Cloud Computing Technology and Science (CloudCom)},
+  year = {2025},
+  pages = {1--8},
+  doi = {10.1109/CloudCom67567.2025.11331341},
+  url = {https://arxiv.org/abs/2512.00355},
+}
+</template>
+  </div>
+</article>
+<article class="publication" id="distillation" data-year="2024" data-categories="generative" data-search="dataset distillation generative dataset distillation using min-max diffusion model eccv workshops 2024 2024 junqiao fan yunjiao zhou min chang jordan ren jianfei yang balancing diversity, quality, and generation time for efficient dataset distillation. generative ai" aria-labelledby="distillation-title">
+  <figure class="pub-figure">
+    <a class="pub-media" href="https://arxiv.org/abs/2503.18626" target="_blank" rel="noopener noreferrer" aria-label="Read Dataset distillation (opens in a new tab)">
+      <img src="assets/media/distillation.webp" alt="Generative dataset distillation" width="720" height="440" loading="lazy" decoding="async">
+    </a>
+    <figcaption><span>Generative dataset distillation</span></figcaption>
+  </figure>
+  <div class="pub-body">
+    <div class="pub-topline"><p class="pub-venue" data-tone="teal">ECCV Workshops 2024</p><span class="pub-topic">Generative AI</span></div>
+    <h3 id="distillation-title"><a href="https://arxiv.org/abs/2503.18626" target="_blank" rel="noopener noreferrer">Generative Dataset Distillation Using Min-Max Diffusion Model</a></h3>
+    <p class="pub-authors"><strong>Junqiao Fan</strong>, Yunjiao Zhou, Min Chang Jordan Ren, Jianfei Yang</p>
+    <p class="pub-summary">Balancing diversity, quality, and generation time for efficient dataset distillation.</p><p class="pub-award"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="m8 12-1 9 5-3 5 3-1-9"/></svg><a href="https://codalab.lisn.upsaclay.fr/competitions/19577" target="_blank" rel="noopener noreferrer">2nd place · Dataset Distillation Challenge</a></p>
+    <div class="pub-links"><a class="pub-link paper-link" href="https://arxiv.org/abs/2503.18626" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8Zm0 0v5h5M8 12h8M8 16h6"/></svg>Paper</a><a class="pub-link pdf-link" href="https://arxiv.org/pdf/2503.18626" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M5 17v4h14v-4"/></svg>PDF</a><a class="pub-link code-link" href="https://github.com/FanJunqiao/DD_Track2" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18"/></svg>Competition code</a><a class="pub-link bib-link" href="assets/bib/distillation.bib" download data-cite="distillation" aria-label="BibTeX for Dataset distillation"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 4H6c-2 0-2 2-2 4v1c0 2-1 3-2 3 1 0 2 1 2 3v1c0 2 0 4 2 4h2m8-16h2c2 0 2 2 2 4v1c0 2 1 3 2 3-1 0-2 1-2 3v1c0 2 0 4-2 4h-2"/></svg>BibTeX</a></div>
+
+    <template class="bibtex">@inproceedings{fan2024distillation,
+  title = {Generative Dataset Distillation Using Min-Max Diffusion Model},
+  author = {Fan, Junqiao and Zhou, Yunjiao and Ren, Min Chang Jordan and Yang, Jianfei},
+  booktitle = {European Conference on Computer Vision Workshops},
+  year = {2024},
+  pages = {60--67},
+  doi = {10.1007/978-3-031-93806-1_5},
+  url = {https://arxiv.org/abs/2503.18626},
+}
+</template>
+  </div>
+</article>
+<article class="publication" id="iomt" data-year="2022" data-categories="healthcare" data-search="secure iomt federated learning driven secure internet of medical things ieee wireless communications · 2022 2022 junqiao fan xuehe wang yanxiang guo xiping hu bin hu federated learning for secure, privacy-preserving intelligence in connected healthcare. healthcare ai" aria-labelledby="iomt-title">
+  <figure class="pub-figure">
+    <a class="pub-media" href="https://doi.org/10.1109/MWC.008.00475" target="_blank" rel="noopener noreferrer" aria-label="Read Secure IoMT (opens in a new tab)">
+      <img src="assets/media/iomt-fig1.webp" alt="System architecture of FLDIoMT" width="720" height="440" loading="lazy" decoding="async">
+    </a>
+    <figcaption><span>System architecture of FLDIoMT</span></figcaption>
+  </figure>
+  <div class="pub-body">
+    <div class="pub-topline"><p class="pub-venue" data-tone="rose">IEEE Wireless Communications · 2022</p><span class="pub-topic">Healthcare AI</span></div>
+    <h3 id="iomt-title"><a href="https://doi.org/10.1109/MWC.008.00475" target="_blank" rel="noopener noreferrer">Federated Learning Driven Secure Internet of Medical Things</a></h3>
+    <p class="pub-authors"><strong>Junqiao Fan</strong>, Xuehe Wang, Yanxiang Guo, Xiping Hu, Bin Hu</p>
+    <p class="pub-summary">Federated learning for secure, privacy-preserving intelligence in connected healthcare.</p>
+    <div class="pub-links"><a class="pub-link paper-link" href="https://doi.org/10.1109/MWC.008.00475" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8Zm0 0v5h5M8 12h8M8 16h6"/></svg>Paper</a><a class="pub-link bib-link" href="assets/bib/iomt.bib" download data-cite="iomt" aria-label="BibTeX for Secure IoMT"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 4H6c-2 0-2 2-2 4v1c0 2-1 3-2 3 1 0 2 1 2 3v1c0 2 0 4 2 4h2m8-16h2c2 0 2 2 2 4v1c0 2 1 3 2 3-1 0-2 1-2 3v1c0 2 0 4-2 4h-2"/></svg>BibTeX</a></div>
+    <div class="pub-citations"><a class="pub-link citation-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=5cEG4tIAAAAJ&amp;pagesize=100&amp;citation_for_view=5cEG4tIAAAAJ:Tyk-4Ss8FVUC" target="_blank" rel="noopener noreferrer" title="Google Scholar · 42 citations · updated 2026-09-29T08:48:06Z" aria-label="Google Scholar: 42 citations for Secure IoMT"><span class="scholar-label"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m2 9 10-6 10 6-10 6L2 9Zm4 3v5c3 3 9 3 12 0v-5M22 9v8"/></svg>Scholar</span><span class="citation-count">42</span></a></div>
+    <template class="bibtex">@article{fan2022iomt,
+  title = {Federated Learning Driven Secure Internet of Medical Things},
+  author = {Fan, Junqiao and Wang, Xuehe and Guo, Yanxiang and Hu, Xiping and Hu, Bin},
+  journal = {IEEE Wireless Communications},
+  year = {2022},
+  volume = {29},
+  number = {2},
+  pages = {68--75},
+  doi = {10.1109/MWC.008.00475},
+  url = {https://doi.org/10.1109/MWC.008.00475},
+}
+</template>
+  </div>
+</article>
+      <!-- PUBLICATIONS:END -->
       </div>
-      <div class="qr-box">
-        <img src="assets/wechat.jpg" alt="WeChat QR code" />
-        <p>WeChat</p>
-      </div>
+      <div class="publication-pagination"><button id="publication-more" class="more-button" aria-controls="publication-list" aria-expanded="false" hidden>Show all publications</button></div>
+      <div id="empty-state" class="empty-state" hidden><h3>No matching publications</h3><p>Try another keyword or research area.</p><button id="reset-filters" class="primary-button">Show all publications</button></div>
+    </section>
+    <div class="background-sections">
+      <details id="background" class="stats-disclosure background-disclosure anchor" aria-labelledby="background-heading">
+        <summary><h2 id="background-heading">Education &amp; Award</h2><span class="disclosure-icon" aria-hidden="true"></span></summary>
+        <div class="background-content background-grid">
+          <section id="education" class="anchor" aria-labelledby="education-heading"><h3 class="background-group-heading" id="education-heading">Education</h3><div class="education-item"><span aria-hidden="true" class="timeline-dot"></span><p class="education-date">2022 — Present</p><h3>Nanyang Technological University</h3><p>Ph.D. student · Electrical and Electronic Engineering</p><p class="muted">Singapore</p></div>
+<div class="education-item"><span aria-hidden="true" class="timeline-dot"></span><p class="education-date">2018 — 2022</p><h3>The Hong Kong Polytechnic University</h3><p>B.Eng. in Computer Science</p><p class="muted">Hong Kong</p></div></section>
+          <section id="awards" class="anchor" aria-labelledby="awards-heading"><h3 class="background-group-heading" id="awards-heading">Award</h3><div class="award-card"><svg aria-hidden="true" class="award-icon" viewbox="0 0 32 32"><path d="M10 5h12v8a6 6 0 0 1-12 0V5Zm0 2H5v4a5 5 0 0 0 5 5m12-9h5v4a5 5 0 0 1-5 5M16 19v7m-6 1h12"></path></svg><p class="education-date">ECCV 2024</p><h3>2nd place</h3><p><a href="https://codalab.lisn.upsaclay.fr/competitions/19577" rel="noopener noreferrer" target="_blank">First Dataset Distillation Challenge</a></p><p class="muted">Generative track</p><a class="text-link" href="#distillation">Explore the work <span aria-hidden="true">↗</span></a></div></section>
+        </div>
+      </details>
+    </div>
+    <section class="research-stats" aria-label="Research statistics">
+      <!-- METRICS:START -->
+<details class="stats-disclosure"><summary>Citation Statistics<span class="disclosure-icon" aria-hidden="true"></span></summary><div class="stats-content"><div class="stats-grid"><div class="stat"><span class="stat-number">9</span><span class="stat-label">Publications</span></div><div class="stat"><span class="stat-number">111</span><span class="stat-label">Citations</span></div><div class="stat"><span class="stat-number">4</span><span class="stat-label">h-index</span></div><div class="stat"><span class="stat-number">3</span><span class="stat-label">i10-index</span></div></div><p class="stats-note">Author-wide citation metrics · <a href="https://scholar.google.com/citations?user=5cEG4tIAAAAJ&amp;hl=en&amp;pagesize=100" target="_blank" rel="noopener noreferrer">Google Scholar snapshot</a> · <time datetime="2026-09-29T08:48:06Z">2026-09-29T08:48:06Z</time></p></div></details>
+      <!-- METRICS:END -->
     </section>
   </main>
-
-  <footer class="footer container">
-    <p>© <span id="year"></span> Junqiao Fan. Last updated: June 2026.</p>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <footer class="footer container"><p>© <span id="year">2026</span> Junqiao Fan</p><p>Last updated September 2026</p><a href="#about">Back to top <span aria-hidden="true">↑</span></a></footer>
+  <dialog id="citation-dialog" aria-labelledby="citation-heading"><div class="dialog-heading"><h2 id="citation-heading">Cite this work</h2><button class="dialog-close" aria-label="Close citation dialog">×</button></div><p id="citation-title"></p><pre tabindex="0"><code id="citation-code"></code></pre><div class="dialog-actions"><button id="copy-citation" class="primary-button">Copy BibTeX</button><a id="download-citation" class="text-link" download>Download .bib ↓</a><span id="copy-status" role="status"></span></div></dialog>
+  <dialog id="wechat-dialog" aria-labelledby="wechat-heading"><div class="dialog-heading"><h2 id="wechat-heading">Connect on WeChat</h2><button class="dialog-close" aria-label="Close WeChat dialog">×</button></div><img src="assets/wechat.jpg" alt="Junqiao Fan’s WeChat QR code" width="280" height="280"><p>Scan the QR code to connect.</p></dialog>
 </body>
 </html>

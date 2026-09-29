@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+_site/
+.DS_Store
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+# Original portrait and QR sources are no longer part of the text-only CV.
+Junqiao_Fan_Academic_CV_Template_fixed/*.jpg
+Junqiao_Fan_Academic_CV_Template_fixed/*.JPG
