@@ -27,16 +27,25 @@
     "pdf": "https://arxiv.org/pdf/2609.34220",
     "code": "https://github.com/FanJunqiao/mmHRI",
     "video": "assets/media/mmhri-demo.mp4",
-    "preview": "assets/media/mmhri-loop.mp4",
-    "poster": "assets/media/mmhri-poster.webp",
+    "preview": "assets/media/mmhri-loop-30-34-45-49.mp4",
+    "poster": "assets/media/mmhri-poster-30.webp",
     "mediaLabel": "Radar → privacy-preserving robot assistance",
     "mediaSource": "Owner-provided Desktop/mmHRI-site-main/mmhri.mp4",
-    "clipStart": 53,
     "clipDuration": 8,
     "bibtype": "article",
     "venueTone": "amber",
     "scholarPending": true,
-    "website": "https://fanjunqiao.github.io/mmHRI-site/"
+    "website": "https://fanjunqiao.github.io/mmHRI-site/",
+    "clipSegments": [
+      {
+        "start": 30,
+        "end": 34
+      },
+      {
+        "start": 45,
+        "end": 49
+      }
+    ]
   },
   {
     "id": "give",
