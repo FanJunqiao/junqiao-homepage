@@ -10,7 +10,7 @@
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{microtype}
-\usepackage{graphicx} % Fit the long M4Human title; no images are included.
+\usepackage{graphicx} % Fit long text on one line; no images are included.
 \definecolor{cvblue}{HTML}{294F7D}
 \definecolor{cvgray}{HTML}{555555}
 \hypersetup{colorlinks=true,urlcolor=cvblue,linkcolor=cvblue,
@@ -28,18 +28,24 @@
 \setlist[enumerate]{leftmargin=19pt,label=\arabic*.,labelsep=5pt,
   topsep=0pt,itemsep=5pt,parsep=0pt,partopsep=0pt}
 \newcommand{\singlelinetitle}[1]{\resizebox{\linewidth}{!}{\bfseries #1}}
-% Accepted/published papers use cvblue; preprint titles remain black.
-\newcommand{\publication}[5][black]{%
+\newsavebox{\authorlinebox}
+\newcommand{\singlelineauthors}[1]{%
+  \sbox{\authorlinebox}{\small #1}%
+  \ifdim\wd\authorlinebox>\linewidth
+    \resizebox{\linewidth}{!}{\usebox{\authorlinebox}}%
+  \else
+    \usebox{\authorlinebox}%
+  \fi}
+\newcommand{\publication}[4]{%
   \item \begin{minipage}[t]{\linewidth}\raggedright
-  \textcolor{#1}{\textbf{#2}}\\[-1pt]
-  {\small #3}\\[-1pt]
-  {\small\textit{#4}\enspace #5}
+  \textbf{#1}\\[-1pt]
+  \singlelineauthors{#2}\\[-1pt]
+  {\small\textit{#3}\enspace #4}
   \end{minipage}}
 
 \begin{document}
 
-{\fontsize{27}{30}\selectfont\bfseries Junqiao Fan}\hfill
-{\small\color{cvgray}Curriculum Vitae}
+{\fontsize{27}{30}\selectfont\bfseries Junqiao Fan}
 
 Ph.D. Candidate (thesis submitted)\enspace\textbar\enspace
 Nanyang Technological University, Singapore\\
@@ -62,7 +68,7 @@ Expected graduation: December 2026
 
 \section*{Education \& Research Experience}
 \textbf{Nanyang Technological University}, Singapore\hfill 2022--Present\\
-Ph.D., School of Electrical and Electronic Engineering (thesis submitted).\\
+Ph.D., School of Electrical and Electronic Engineering.\\
 Supervisor: \href{https://personal.ntu.edu.sg/elhxie/}{Prof. Lihua Xie};
 Co-supervisor: \href{https://marsyang.site/}{Prof. Jianfei Yang}.
 
@@ -85,31 +91,31 @@ B.Eng. in Computer Science; minor in Mathematics.
 {arXiv:2606.13435, 2026 (preprint).}
 {\href{https://arxiv.org/abs/2606.13435}{[Paper]}\enspace\href{https://luis-cloud-sg.github.io/GIVE-project/}{[Website]}}
 
-\publication[cvblue]
+\publication
 {\singlelinetitle{M4Human: A Large-Scale Multimodal mmWave Radar Benchmark for Human Mesh Reconstruction}}
 {\textbf{Junqiao Fan}, Yunjiao Zhou, Yizhuo Yang, Xinyuan Cui, Jiarui Zhang, Lihua Xie, Jianfei Yang, Chris Xiaoxuan Lu, Fangqiang Ding}
 {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026.}
 {\href{https://openaccess.thecvf.com/content/CVPR2026/html/Fan_M4Human_A_Large-Scale_Multimodal_mmWave_Radar_Benchmark_for_Human_Mesh_CVPR_2026_paper.html}{[Paper]}\enspace\href{https://fanjunqiao.github.io/M4Human-site/}{[Website]}}
 
-\publication[cvblue]
+\publication
 {mmPred: Radar-based Human Motion Prediction in the Dark}
 {\textbf{Junqiao Fan}, Haocong Rao, Jiarui Zhang, Jianfei Yang, Lihua Xie}
 {AAAI Conference on Artificial Intelligence, 40(5):3777--3785, 2026.}
 {\href{https://ojs.aaai.org/index.php/AAAI/article/view/37378}{[Paper]}\enspace\href{https://fanjunqiao.github.io/mmPred-site/}{[Website]}}
 
-\publication[cvblue]
+\publication
 {Diffusion Model Is a Good Pose Estimator from 3D RF-Vision}
 {\textbf{Junqiao Fan}, Jianfei Yang, Yuecong Xu, Lihua Xie}
 {European Conference on Computer Vision (ECCV), pp. 1--18, 2024.}
 {\href{https://arxiv.org/abs/2403.16198}{[Paper]}\enspace\href{https://fanjunqiao.github.io/mmDiff-site/}{[Website]}}
 
-\publication[cvblue]
+\publication
 {Generative Dataset Distillation Using Min-Max Diffusion Model}
 {\textbf{Junqiao Fan}, Yunjiao Zhou, Min Chang Jordan Ren, Jianfei Yang}
 {European Conference on Computer Vision Workshops, pp. 60--67, 2024.}
 {\href{https://arxiv.org/abs/2503.18626}{[Paper]}}
 
-\publication[cvblue]
+\publication
 {Federated Learning Driven Secure Internet of Medical Things}
 {\textbf{Junqiao Fan}, Xuehe Wang, Yanxiang Guo, Xiping Hu, Bin Hu}
 {IEEE Wireless Communications, 29(2):68--75, 2022.}
