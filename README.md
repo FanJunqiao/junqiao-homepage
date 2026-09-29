@@ -39,7 +39,7 @@ python3 -m unittest discover -s tests -v
 
 ## Enable automatic updates and deployment
 
-This local directory tracks `main` in `git@github.com:FanJunqiao/junqiao-homepage.git`.
+This local directory tracks `main` in `https://github.com/FanJunqiao/junqiao-homepage.git`.
 
 1. Commit and push the website, including the hidden `.github/workflows/` directory and `.nojekyll`, to the homepage repository's `main` branch.
 2. In **Settings → Pages → Build and deployment → Source**, select **GitHub Actions**.
