@@ -2,7 +2,7 @@
   "source": "Google Scholar",
   "profileUrl": "https://scholar.google.com/citations?user=5cEG4tIAAAAJ&hl=en&pagesize=100",
   "authorId": "5cEG4tIAAAAJ",
-  "checked": "2026-10-04T04:49:35Z",
+  "checked": "2026-10-09T03:42:57Z",
   "publications": {
     "mmhri": {
       "scholarId": "5cEG4tIAAAAJ:8k81kl-MbHgC",
@@ -10,7 +10,7 @@
       "count": 0,
       "articleUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:8k81kl-MbHgC",
       "citedByUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:8k81kl-MbHgC",
-      "checked": "2026-10-04T04:49:35Z"
+      "checked": "2026-10-09T03:42:57Z"
     },
     "give": {
       "scholarId": "5cEG4tIAAAAJ:UebtZRa9Y70C",
@@ -18,7 +18,7 @@
       "count": 2,
       "articleUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:UebtZRa9Y70C",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=584968714267293788",
-      "checked": "2026-10-04T04:49:35Z"
+      "checked": "2026-10-09T03:42:57Z"
     },
     "m4human": {
       "scholarId": "5cEG4tIAAAAJ:LkGwnXOMwfcC",
@@ -26,7 +26,7 @@
       "count": 11,
       "articleUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:LkGwnXOMwfcC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12579926363023776563",
-      "checked": "2026-10-04T04:49:35Z"
+      "checked": "2026-10-09T03:42:57Z"
     },
     "mmpred": {
       "scholarId": "5cEG4tIAAAAJ:_FxGoFyzp5QC",
@@ -34,15 +34,15 @@
       "count": 9,
       "articleUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:_FxGoFyzp5QC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10397669285769157448",
-      "checked": "2026-10-04T04:49:35Z"
+      "checked": "2026-10-09T03:42:57Z"
     },
     "mmdiff": {
       "scholarId": "5cEG4tIAAAAJ:zYLM7Y9cAGgC",
       "title": "Diffusion model is a good pose estimator from 3d rf-vision",
-      "count": 44,
+      "count": 45,
       "articleUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:zYLM7Y9cAGgC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6942248044648884708",
-      "checked": "2026-10-04T04:49:35Z"
+      "checked": "2026-10-09T03:42:57Z"
     },
     "neuralmusic": {
       "scholarId": "5cEG4tIAAAAJ:roLk4NBRz8UC",
@@ -50,7 +50,7 @@
       "count": 0,
       "articleUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:roLk4NBRz8UC",
       "citedByUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:roLk4NBRz8UC",
-      "checked": "2026-10-04T04:49:35Z"
+      "checked": "2026-10-09T03:42:57Z"
     },
     "smamdiff": {
       "scholarId": "5cEG4tIAAAAJ:ufrVoPGSRksC",
@@ -58,7 +58,7 @@
       "count": 1,
       "articleUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:ufrVoPGSRksC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11781533228417800594",
-      "checked": "2026-10-04T04:49:35Z"
+      "checked": "2026-10-09T03:42:57Z"
     },
     "distillation": {
       "scholarId": "5cEG4tIAAAAJ:WF5omc3nYNoC",
@@ -66,7 +66,7 @@
       "count": 0,
       "articleUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:WF5omc3nYNoC",
       "citedByUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:WF5omc3nYNoC",
-      "checked": "2026-10-04T04:49:35Z"
+      "checked": "2026-10-09T03:42:57Z"
     },
     "iomt": {
       "scholarId": "5cEG4tIAAAAJ:Tyk-4Ss8FVUC",
@@ -74,7 +74,7 @@
       "count": 42,
       "articleUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:Tyk-4Ss8FVUC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17197965110426792843",
-      "checked": "2026-10-04T04:49:35Z"
+      "checked": "2026-10-09T03:42:57Z"
     }
   }
 }
