@@ -2,31 +2,31 @@
   "source": "Google Scholar",
   "profileUrl": "https://scholar.google.com/citations?user=5cEG4tIAAAAJ&hl=en&pagesize=100",
   "authorId": "5cEG4tIAAAAJ",
-  "checked": "2026-10-09T03:42:57Z",
+  "checked": "2026-10-19T03:39:54Z",
   "publications": {
     "mmhri": {
       "scholarId": "5cEG4tIAAAAJ:8k81kl-MbHgC",
-      "title": "mmHRI: Towards Privacy-Preserving Human-Robot Interaction with Millimeter-Wave Radar",
-      "count": 0,
+      "title": "mmHRI: Towards privacy-preserving human-robot interaction with millimeter-wave radar",
+      "count": 2,
       "articleUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:8k81kl-MbHgC",
-      "citedByUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:8k81kl-MbHgC",
-      "checked": "2026-10-09T03:42:57Z"
+      "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=617477914583692140",
+      "checked": "2026-10-19T03:39:54Z"
     },
     "give": {
       "scholarId": "5cEG4tIAAAAJ:UebtZRa9Y70C",
       "title": "GIVE: Grounding Human Gestures in Vision-Language-Action Models",
-      "count": 2,
+      "count": 4,
       "articleUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:UebtZRa9Y70C",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=584968714267293788",
-      "checked": "2026-10-09T03:42:57Z"
+      "checked": "2026-10-19T03:39:54Z"
     },
     "m4human": {
       "scholarId": "5cEG4tIAAAAJ:LkGwnXOMwfcC",
       "title": "M4human: A large-scale multimodal mmwave radar benchmark for human mesh reconstruction",
-      "count": 11,
+      "count": 12,
       "articleUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:LkGwnXOMwfcC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12579926363023776563",
-      "checked": "2026-10-09T03:42:57Z"
+      "checked": "2026-10-19T03:39:54Z"
     },
     "mmpred": {
       "scholarId": "5cEG4tIAAAAJ:_FxGoFyzp5QC",
@@ -34,15 +34,15 @@
       "count": 9,
       "articleUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:_FxGoFyzp5QC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10397669285769157448",
-      "checked": "2026-10-09T03:42:57Z"
+      "checked": "2026-10-19T03:39:54Z"
     },
     "mmdiff": {
       "scholarId": "5cEG4tIAAAAJ:zYLM7Y9cAGgC",
       "title": "Diffusion model is a good pose estimator from 3d rf-vision",
-      "count": 45,
+      "count": 47,
       "articleUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:zYLM7Y9cAGgC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6942248044648884708",
-      "checked": "2026-10-09T03:42:57Z"
+      "checked": "2026-10-19T03:39:54Z"
     },
     "neuralmusic": {
       "scholarId": "5cEG4tIAAAAJ:roLk4NBRz8UC",
@@ -50,7 +50,7 @@
       "count": 0,
       "articleUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:roLk4NBRz8UC",
       "citedByUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:roLk4NBRz8UC",
-      "checked": "2026-10-09T03:42:57Z"
+      "checked": "2026-10-19T03:39:54Z"
     },
     "smamdiff": {
       "scholarId": "5cEG4tIAAAAJ:ufrVoPGSRksC",
@@ -58,7 +58,7 @@
       "count": 1,
       "articleUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:ufrVoPGSRksC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11781533228417800594",
-      "checked": "2026-10-09T03:42:57Z"
+      "checked": "2026-10-19T03:39:54Z"
     },
     "distillation": {
       "scholarId": "5cEG4tIAAAAJ:WF5omc3nYNoC",
@@ -66,15 +66,15 @@
       "count": 0,
       "articleUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:WF5omc3nYNoC",
       "citedByUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:WF5omc3nYNoC",
-      "checked": "2026-10-09T03:42:57Z"
+      "checked": "2026-10-19T03:39:54Z"
     },
     "iomt": {
       "scholarId": "5cEG4tIAAAAJ:Tyk-4Ss8FVUC",
       "title": "Federated learning driven secure internet of medical things",
-      "count": 42,
+      "count": 43,
       "articleUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5cEG4tIAAAAJ&pagesize=100&citation_for_view=5cEG4tIAAAAJ:Tyk-4Ss8FVUC",
       "citedByUrl": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17197965110426792843",
-      "checked": "2026-10-09T03:42:57Z"
+      "checked": "2026-10-19T03:39:54Z"
     }
   }
 }
